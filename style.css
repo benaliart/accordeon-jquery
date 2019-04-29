@@ -1,0 +1,45 @@
+html {
+	padding: 10px
+}
+
+.bloc, .titre, .content, p {
+	display: block;
+	margin: 0;
+}
+
+.bloc {
+	margin-bottom: 10px;
+}
+
+.accordeon {
+	padding: 10px;
+}
+
+.accordeon2 .titre {
+	color: white;
+	background-color: gray;
+	padding: 10px;
+}
+
+.accordeon2 .titre.expanded:before {
+	content: "- ";
+}
+
+.accordeon2 .titre:before {
+	width: 20px;
+	content: "+ ";
+	display: inline-block;
+}
+
+.accordeon2 .content{
+	padding: 10px;
+	background-color: #f4f4F4;
+}
+
+p {
+
+}
+
+.pointer {
+	cursor: pointer;
+}
