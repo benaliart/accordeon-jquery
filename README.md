@@ -1,11 +1,9 @@
 # accordeon-jquery
-Create a accordeon effect on a list
+Create an accordeon effect on a list
 
 demo : <a href="http://www.aliarteo.com/accordeon-jquery/exemple.html" target="_blank">http://www.aliarteo.com/accordeon-jquery/exemple.html</a>
 
 <h2>How to Use</h2>
-
-Create an HTML structure like this for your accordeon list:
 
 Add JS files:
 Jquery, accordeonJquery and scrolltoID
@@ -19,8 +17,9 @@ Jquery, accordeonJquery and scrolltoID
 	</code>
 </pre>
 
-Create your HTML list,
-use any HTML Tag you want
+Create an HTML structure like this for your accordeon list:
+use any HTML Tag you want.
+just respect tihe structure:
 
 <pre>
 	<code>
