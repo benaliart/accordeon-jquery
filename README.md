@@ -57,12 +57,13 @@ then activate the accordeon in JS :
 <pre>
 	<code>
 
-	<script>
-		$(document).ready(function(){
-			// Init Accordeon Jquery on a DOM target: ex .mylist
-			accordeonJquery(".mylist");
-		});
-	</script>
+		&lt;script&gt;
+			$(document).ready(function(){
+				// Init Accordeon Jquery on a DOM target: ex .mylist
+				accordeonJquery(".mylist");
+			});
+		&lt;/script&gt;
+	
 	</code>
 </pre>
 
