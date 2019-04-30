@@ -5,9 +5,24 @@ Create a accordeon effect on a list
 
 Create an HTML structure like this for your accordeon list:
 
+Add JS files:
+Jquery, accordeonJquery and scrolltoID
+
 <pre>
 	<code>
-			&lt;div&gt;
+
+	&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script src="scrolltoid.js"&gt;&lt;/script&gt;
+	&lt;script src="accordeon-jquery.js"&gt;&lt;/script&gt;
+	</code>
+</pre>
+
+Create your HTML list,
+use any HTML Tag you want
+
+<pre>
+	<code>
+		&lt;div class="mylist" &gt;
 		  	&lt;div&gt;
 		    	&lt;div&gt; TITRE 1	&lt;/div&gt;
 		    	&lt;div&gt; Content 1	&lt;/div&gt;
@@ -16,7 +31,24 @@ Create an HTML structure like this for your accordeon list:
 		    	&lt;div&gt; TITRE 2	&lt;/div&gt;
 		    	&lt;div&gt; Content 2	&lt;/div&gt;
 		  	&lt;/div&gt;
-			&lt;/div&gt;
+		&lt;/div&gt;
+	</code>
+</pre>
+
+or 
+
+<pre>
+	<code>
+		&lt;ul class="mylist" &gt;
+		  	&lt;li&gt;
+		    	&lt;h3&gt; TITRE 1	&lt;/h3&gt;
+		    	&lt;div&gt; Content 1	&lt;/div&gt;
+		  	&lt;/li&gt;
+		  	&lt;li&gt;
+		    	&lt;h3&gt; TITRE 2	&lt;/h3&gt;
+		    	&lt;div&gt; Content 2	&lt;/div&gt;
+		  	&lt;/li&gt;
+		&lt;/ul&gt;
 	</code>
 </pre>
 
@@ -27,10 +59,8 @@ then activate the accordeon in JS :
 
 	<script>
 		$(document).ready(function(){
-			// Init Accordeon Jquery
-			accordeonJquery(".accordeon");
-			accordeonJquery(".accordeon2", true);
-			accordeonJquery(".accordeon3", true);
+			// Init Accordeon Jquery on a DOM target: ex .mylist
+			accordeonJquery(".mylist");
 		});
 	</script>
 	</code>
