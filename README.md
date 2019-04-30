@@ -24,12 +24,12 @@ use any HTML Tag you want
 	<code>
 		&lt;div class="mylist" &gt;
 		  	&lt;div&gt;
-		    	&lt;div&gt; TITRE 1	&lt;/div&gt;
-		    	&lt;div&gt; Content 1	&lt;/div&gt;
+		    		&lt;div&gt; TITRE 1	&lt;/div&gt;
+		    		&lt;div&gt; Content 1	&lt;/div&gt;
 		  	&lt;/div&gt;
 		  	&lt;div&gt;
-		    	&lt;div&gt; TITRE 2	&lt;/div&gt;
-		    	&lt;div&gt; Content 2	&lt;/div&gt;
+		    		&lt;div&gt; TITRE 2	&lt;/div&gt;
+		    		&lt;div&gt; Content 2	&lt;/div&gt;
 		  	&lt;/div&gt;
 		&lt;/div&gt;
 	</code>
@@ -41,12 +41,12 @@ or
 	<code>
 		&lt;ul class="mylist" &gt;
 		  	&lt;li&gt;
-		    	&lt;h3&gt; TITRE 1	&lt;/h3&gt;
-		    	&lt;div&gt; Content 1	&lt;/div&gt;
+		    		&lt;h3&gt; TITRE 1	&lt;/h3&gt;
+		    		&lt;div&gt; Content 1	&lt;/div&gt;
 		  	&lt;/li&gt;
 		  	&lt;li&gt;
-		    	&lt;h3&gt; TITRE 2	&lt;/h3&gt;
-		    	&lt;div&gt; Content 2	&lt;/div&gt;
+		    		&lt;h3&gt; TITRE 2	&lt;/h3&gt;
+		    		&lt;div&gt; Content 2	&lt;/div&gt;
 		  	&lt;/li&gt;
 		&lt;/ul&gt;
 	</code>
