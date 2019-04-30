@@ -1,5 +1,13 @@
 html {
-	padding: 10px
+	padding: 10px;
+	font-family: verdana;
+	font-size: 16px;
+}
+
+body {
+	margin: auto;
+	max-width: 800px;
+	width: 100%;
 }
 
 .bloc, .titre, .content, p {
@@ -15,6 +23,18 @@ html {
 	padding: 10px;
 }
 
+.accordeon .bloc {
+	margin-bottom: 10px;
+}
+
+.accordeon .titre {
+	padding: 10px 0 5px 0;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+
+}
+
+/* Style Accordeon 2 */
 .accordeon2 .titre {
 	color: white;
 	background-color: gray;
@@ -26,14 +46,43 @@ html {
 }
 
 .accordeon2 .titre:before {
-	width: 20px;
+	width: 30px;
 	content: "+ ";
 	display: inline-block;
+	text-align: center;
+	margin-left:-5px;
 }
 
 .accordeon2 .content{
 	padding: 10px;
 	background-color: #f4f4F4;
+}
+
+/* Style Accordeon 3 */
+.accordeon3 .bloc {
+	border: 1px solid #66BABF;
+}
+
+.accordeon3 .titre {
+	color: #ffffff;
+	background-color: #66BABF;
+	padding: 10px;
+}
+
+.accordeon3 .titre.expanded:before {
+	content: "- ";
+}
+
+.accordeon3 .titre:before {
+	width: 30px;
+	content: "+ ";
+	display: inline-block;
+	text-align: center;
+	margin-left:-5px;
+}
+
+.accordeon3 .content{
+	padding: 10px;
 }
 
 p {

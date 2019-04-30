@@ -1,23 +1,31 @@
-function accordeonJquery(target) {
+function accordeonJquery(target = ".accordeon", scroll = false) {
+
+  console.log ("Set Accordeon Jquery to '" + target +"'");
 
   //HTML STRUCTURE
   // > Target (accordeon)
-  //  > DOM (bloc)
+  //  > DOM (bloc A)
   //    > DOM 1 (titre)
   //    > DOM 2 (content)
+  //  > DOM (bloc B)
+  //    > DOM 1 (titre)
+  //    > DOM 2 (content)
+  //  ...etc
 
+  // Hide "content"
   $(target).children().children().next().hide();
 
-  // Ajouter la class pointer à tous les target > DOM > DOM 1
+  // Add "pointer class to all "title"
   $(target).children().each ( function () {
     $(this).children().first().toggleClass("pointer")
   });
 
+  // Expand the content of the first bloc
   $(target).children().children().first().toggleClass("expanded");
   $(target).children().children().eq(1).slideToggle(600);  
 
+  // on click event: 
   $(target).children().click(function () {
-      console.log("Start accordeon");
 
     var targetthis = $(this);
     if(targetthis.children().first().hasClass("expanded")) {
@@ -31,14 +39,20 @@ function accordeonJquery(target) {
 
   });
 
-  $(".pointer").click(function () {
-    // If ScrolltoID function exist
-    // See 
-    if (typeof scrolltoID === "function") { 
-      // safe to use the function
-      scrolltoID($(this), 100, "false",610);
-    }
-    
-  });
+  // If Scroll effet is activated and scrolltoID function is set
+  if(scroll === true) {
+    $(".pointer").click(function () {
+
+      // If ScrolltoID function exist
+      // See 
+      if (typeof scrolltoID === "function") { 
+        console.log("click");
+        // safe to use the function
+        scrolltoID($(this), 30, false, 610);
+      }
+      
+    });    
+  }
+
 
 }     
